@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>Changing to backgroung color</title>
+</head>
+<body>
+    <h1>Change Background Color</h1>
+    <button onclick="changeBackgroundColor()">Choose your color</button> 
+    <script>
+      function changeBackgroundColor() {
+        // Prompt the user for a color input
+        var userColor = prompt("Enter a color (e.g., 'red', '#00FF00', 'rgb(255, 0, 0)'):");
+        
+        // Check if the user provided a color
+        if (userColor) {
+          // Set the background color of the body element
+          document.body.style.backgroundColor = userColor;
+        }
+      }
+    </script>
+</body>
+</html>
